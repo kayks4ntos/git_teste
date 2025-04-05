@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant</title>
+    <style>
+        div#conteiner {
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            font-size: 20px;
+            color: black;
+            border: 5px solid darkblue;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease; /* Suaviza as animações */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="conteiner">
+        Interaja...
+    </div>      
+    <h1><?php echo "kayk"; ?></h1> <!-- Exemplo de conteúdo PHP -->
+
+    <script>
+        var area = document.getElementById('conteiner');
+
+        area.addEventListener('click', clicar);
+        area.addEventListener('mouseenter', entrou);
+        area.addEventListener('mouseout', saiu);
+
+        function clicar() {
+            area.innerText = "Clicou!";
+            area.style.background = "red";
+        }
+
+        function entrou() {
+            area.innerText = "Saiu!";
+            area.style.background = "blue";
+            area.style.height = "400px";
+            area.style.backgroundImage = 'url("../imgs/imgs1.jpg")';
+            area.style.backgroundSize = "cover";
+            area.style.backgroundPosition = "center";
+        }
+
+        function saiu() {
+            area.innerText = "arthur viado";
+            area.style.background = "green";
+            area.style.height = "200px";
+            area.style.backgroundImage = 'url("../imgs/imgs2.png")';
+            area.style.backgroundSize = "cover";
+            area.style.backgroundPosition = "center";
+        }
+    </script>
+</body>
+</html>
